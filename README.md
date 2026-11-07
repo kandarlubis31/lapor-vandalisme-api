@@ -10,11 +10,11 @@ contributing. Admins review submissions and mark them valid or rejected.
 
 - **Token authentication** — register and log in through Sanctum; the API is stateless.
 - **Report CRUD** — each user manages their own reports only, enforced at the query level rather
-  than by filtering in the controller response.
+ than by filtering in the controller response.
 - **Leaderboard** — ranks users by reporting activity.
 - **Admin validation** — pending reports move to validated once an admin reviews them.
 - **Web admin panel** — separate login at `/admin/login`, dashboard, and user management, behind
-  `AdminMiddleware`.
+ `AdminMiddleware`.
 - **Ownership model** — `User` → `Report`, so a report always has a reporter.
 
 ## Stack
@@ -53,8 +53,18 @@ in `.env` for a real deployment. The admin panel is then reachable at `/admin/lo
 
 - The seeder creates sample data for local use. Do not run it against production.
 - Uploaded evidence images should live on object storage, not in the repository or on the app's
-  local disk — Laravel's `filesystems.php` is the place to configure that.
+ local disk — Laravel's `filesystems.php` is the place to configure that.
 - Reports contain user-submitted content and locations; treat the database as personal data.
+
+---
+
+## Bahasa Indonesia
+
+**lapor-vandalisme-api** adalah REST API dan panel admin untuk melaporkan vandalisme fasilitas umum, dibangun dengan Laravel dan Sanctum.
+
+Warga mendaftar, mengirim laporan berisi lokasi dan deskripsi, lalu naik peringkat lewat papan skor pelaporan.
+
+---
 
 ## License
 
