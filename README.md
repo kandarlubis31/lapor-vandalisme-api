@@ -56,6 +56,16 @@ in `.env` for a real deployment. The admin panel is then reachable at `/admin/lo
   local disk — Laravel's `filesystems.php` is the place to configure that.
 - Reports contain user-submitted content and locations; treat the database as personal data.
 
+---
+
+## Bahasa Indonesia
+
+**lapor-vandalisme-api** adalah REST API dan panel admin untuk melaporkan vandalisme fasilitas umum, dibangun dengan Laravel dan Sanctum.
+
+Warga mendaftar, mengirim laporan berisi lokasi dan deskripsi, lalu naik peringkat lewat papan skor pelaporan.
+
+---
+
 ## License
 
 MIT
